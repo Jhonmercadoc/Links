@@ -1,0 +1,50 @@
+.body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    min-width: 100vw;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.link {
+    color: #0057b0;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-decoration: underline;
+    position: relative;
+}
+
+.link:first-letter {
+    text-decoration: uppercase;
+}
+
+.link.is-visited,
+.link:visited {
+    color: #7d29d0;
+}
+
+.link.is-hover,
+.link:hover {
+    text-decoration: none;
+}
+
+.link.is-hover::before,
+.link:hover::before {
+    background-color: #bcdae3;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 23px;
+    left: -7px;
+    position: absolute;
+    right: -7px;
+    z-index: -1;
+}
